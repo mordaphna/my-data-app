@@ -1,54 +1,48 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Data App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset=utf-8>
-  <title>My Data App</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <h1 class="content">
+          <img
+            src="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png"
+          />
+          NBA Teams App
+        </h1>
+        <!-- <h1 class="content", id="title" >NBA Teams App</h1> -->
+        <div class="item meta">
+          <div class="row">
+            <div class="item meta">
+              <div>
+                <p>Sort by Team Name</p>
+                <select id="data-sort">
+                  <option value="a-z">A to Z</option>
+                  <option value="z-a">Z to A</option>
+                </select>
+              </div>
+            </div>
 
-<body>
-  <div id="container">
-    <div id="main">
-      <h1 class="content">My Data App</h1>
-
-      <div id="app" class="row">
-
-        <!-- Start example showing the css layout -->
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
-        <!-- End example showing the css layout -->
-
-        <template id="item-template">
-          <div class="item">
-            <div class="content">
-              <h2>Example Heading</h2>
-              <p>Example text.</p>
+            <div class="item meta">
+              <div>
+                <p>Filter by Conference</p>
+                <select id="data-filter">
+                  <option value="all">All</option>
+                  <option value="West">West</option>
+                  <option value="East">East</option>
+                </select>
+              </div>
             </div>
           </div>
-        </template>
-
+        </div>
       </div>
-    </div>
-  </div>
-  <script type="module" src="index.js"></script>
-</body>
 
+      <div id="app" class="row"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
